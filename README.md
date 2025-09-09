@@ -1,34 +1,41 @@
-📱 Mobile Automation Testing with Appium & WebdriverIO
-// ------------------------------------------------------
-// This repository contains end-to-end test automation for the
-// SwagLabs mobile app using Appium, WebdriverIO, and Node.js.
-// It validates login form scenarios and ensures product quality.
+<h1>📱 Mobile Automation Testing with Appium & WebdriverIO</h1>
+<hr>
 
-//  Tools & Technologies
-// * Appium Server v3 (running from CMD)
-// * Node.js
-// * WebdriverIO
-// * Appium Inspector (for selectors)
-// * scrcpy (to mirror Android screen)
+<p>
+This repository contains end-to-end test automation for the 
+<strong>SwagLabs mobile app</strong> using <strong>Appium</strong>, 
+<strong>WebdriverIO</strong>, and <strong>Node.js</strong>. 
+It validates login form scenarios and ensures product quality.
+</p>
 
-// 🛠️ Test Coverage
-// Test case 1. Verify login with no credentials
-// Expected: "Username is required"
+<h2>🔧 Tools & Technologies</h2>
+<ul>
+  <li>Appium Server v3 (running from CMD)</li>
+  <li>Node.js</li>
+  <li>WebdriverIO</li>
+  <li>Appium Inspector (for selectors)</li>
+  <li>scrcpy (to mirror Android screen)</li>
+</ul>
 
-// Test case 2. Verify login with only username
-// Expected: "Password is required"
+<h2>🛠️ Test Coverage</h2>
+<ol>
+  <li><strong>Verify login with no credentials</strong><br>
+      Expected: <code>Username is required</code></li>
+  <li><strong>Verify login with only username</strong><br>
+      Expected: <code>Password is required</code></li>
+  <li><strong>Verify login with only password</strong><br>
+      Expected: <code>Username is required</code></li>
+  <li><strong>Verify login with invalid credentials</strong><br>
+      Expected: <code>Username and password do not match any user in this service.</code></li>
+  <li><strong>Verify login with valid credentials</strong><br>
+      Expected: Navigate to Products page and display <code>PRODUCTS</code></li>
+</ol>
 
-// Test case 3. Verify login with only password
-// Expected: "Username is required"
-
-// Test case 4. Verify login with invalid credentials
-// Expected: "Username and password do not match any user in this service."
-
-// Test case 5. Verify login with valid credentials
-// Expected: Navigate to Products page and display "PRODUCTS"
-
-
-
-//  How to Run
-// 1. Start Appium server from CMD: appium
-// 2. Run WebdriverIO tests: npx wdio run wdio.conf.js
+<h2>✅ How to Run</h2>
+<ol>
+  <li>Start Appium server from CMD:<br>
+      <code>appium</code></li>
+  <li>Connect your local device</li>
+  <li>Run WebdriverIO tests:<br>
+      <code>npx wdio run wdio.conf.js</code></li>
+</ol>
